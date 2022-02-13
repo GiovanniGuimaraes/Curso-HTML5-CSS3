@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!--<video src="midia/Meu-Video.m4v" controls height="500"></video>-->
+
+    <video controls width="300" height="350" poster="imagens/thumbnail.jpg">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+        <source src="midia/Meu-Video.m4v" type="video/mp4">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <p>Seu navegador não é compatível com reprodução de vídeos, <a href="midia/meu-video.mp4" download="meu-video.mp4"> clique aqui</a> para fazer o download</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iOM20kM2gOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Vídeos do Facebook</h1>
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    <div class="fb-video" data-href="https://www.facebook.com/facebook/videos/10153231379946729/" data-width="500" data-show-text="false">
+        <div class="fb-xfbml-parse-ignore">
+          <blockquote cite="https://www.facebook.com/facebook/videos/10153231379946729/">
+            <a href="https://www.facebook.com/facebook/videos/10153231379946729/">How to Share With Just Friends</a>
+            <p>How to share with just friends.</p>
+            Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on Friday, December 5, 2014
+          </blockquote>
+        </div>
+      </div>
+
+    <h1>Vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/198340486?h=c09490b1be" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
